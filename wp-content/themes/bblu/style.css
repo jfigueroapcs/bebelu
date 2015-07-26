@@ -1,0 +1,38 @@
+.main{
+    min-height:85px;
+}
+.nav>li>a {
+    padding: 30px 15px !important;
+    color:black;
+    border-radius: 0px !important;
+}
+.nav>li>a:hover{
+}
+
+.content-logo{
+    min-height: 80px !important;
+    background: red;
+}
+#searchsubmit{
+    /*color:transparent !important;*/
+    color:white !important;
+    margin-left: -5px;
+    background: black;
+    border: 0;
+    padding: 3px 10px;
+    
+}
+.r{
+    float:right !important;
+}
+.slider{
+    min-height:450px;
+    background:red;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: white;
+}
+.rico a:hover{
+    background:#47A3F3 !important;
+    color:white;
+}
