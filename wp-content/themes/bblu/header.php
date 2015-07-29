@@ -1,14 +1,16 @@
 <!DOCTYPE html>
+<?php global $woocommerce; ?>
     <html lang="es">
         <head>
             <meta charset="UTF-8">
             <title><?php wp_title(); ?></title>
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
+            <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/menu.css">
             <!-- Latest compiled and minified CSS -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-            <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
-            <?php wp_head(); ?>
+            <?php //wp_head(); ?>
         </head>
         <body>
             <section class="main">
@@ -22,7 +24,7 @@
                                 <ul class="nav nav-pills menu">
                                     <li role="presentation" class="dropdown">
                                         <a class="dropdown-toggle content-logo" data-toggle="dropdown" href="<?php echo home_url(""); ?>" role="button" aria-expanded="false">
-                                            <img src="" alt="" class="logo"> 
+                                            <img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="" class="logo"> 
                                         </a>
                                     </li>
                                     <li role="presentation" class="dropdown">
@@ -52,16 +54,18 @@
                                     </li>
                                     <li role="presentation" class="dropdown r rico">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo home_url(""); ?>" role="button" aria-expanded="false">
-                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> (8)
+                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                                            <span style="position:relative;top:-5px;"> (8)</span>
                                         </a>
                                     </li>
                                     <li role="presentation" class="dropdown r rico">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo home_url(""); ?>" role="button" aria-expanded="false">
-                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> (5)
+                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                            <span style="position:relative;top:-5px;"> (5)</span>
                                         </a>
                                     </li>
                                     <li role="presentation" class="dropdown r">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="cursor: auto; padding: 27px 15px !important;">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="cursor: auto;">
                                             <?php get_search_form(); ?>
                                         </a>
                                     </li>
