@@ -1,4 +1,5 @@
 <?php
+if (isset($_SERVER["HTTP_X_FORWARDED_PROTO"]) && $_SERVER["HTTP_X_FORWARDED_PROTO"] == "https") $_SERVER["HTTPS"] = "on";
 /**
  * The base configurations of the WordPress.
  *
@@ -33,8 +34,6 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-//define('WP_SITEURL', 'http://' . getenv('C9_PROJECT') . '.' . getenv('C9_USER') . '.c9.io');
-
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -44,14 +43,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '!KGb}-}-XtWt`F;-?2$<e{CD^E}i]GU>rS/Dw@noO2PEZbZof<_/p{en]VoBb-w/');
-define('SECURE_AUTH_KEY',  'wA!zBn<D&R #mTt2^p.&fQIAcYP=k~^OcR|xl7*O<6$q`3k e~69{u_ @.!WjurH');
-define('LOGGED_IN_KEY',    'h1^N@uv>Do]|n_<p|l9U|1~~_fj/F7p&I R-l]#Ep#)M[Cw7m@T9}r^i{y+^#cB_');
-define('NONCE_KEY',        '/@-3(6Xq7u80Fks`fr>Zm(+<*r)c]E59`I@+C;b]AqkF%-z[6#Yk7-@N`(g9T/w,');
-define('AUTH_SALT',        ']])^v4avEJg EE]^i|y<b$;L;~ea,]D{Djd%?spwv7k9~hyX#:7HQZ>lV)Ii]wrm');
-define('SECURE_AUTH_SALT', 'Lz,*eJJYi0*==MJ!tiAz*Egvm%]]RE?0>:lxU[Kl__H-|-)7Q5.dx_iT$#IA7FV@');
-define('LOGGED_IN_SALT',   'oMm$P<.d`PnMt$o#N:-M{Q1tO?77}2k[s-;tuH!l3u]7|w:W)l0Z#X1fLfr5~p63');
-define('NONCE_SALT',       'qv*u/Y!giAqOMECgm_,EiG$5jFIjh(CBlk$ZMiq/@piC8Cbhc3_n~-aDPl#kjK.>');
+define('AUTH_KEY',         'put your unique phrase here');
+define('SECURE_AUTH_KEY',  'put your unique phrase here');
+define('LOGGED_IN_KEY',    'put your unique phrase here');
+define('NONCE_KEY',        'put your unique phrase here');
+define('AUTH_SALT',        'put your unique phrase here');
+define('SECURE_AUTH_SALT', 'put your unique phrase here');
+define('LOGGED_IN_SALT',   'put your unique phrase here');
+define('NONCE_SALT',       'put your unique phrase here');
 
 /**#@-*/
 
@@ -71,6 +70,8 @@ $table_prefix  = 'wp_';
  * in their development environments.
  */
 define('WP_DEBUG', false);
+$_SERVER["HTTP_HOST"] = $_SERVER["SERVER_NAME"];
+$_SERVER["HTTP_HOST"] = $_SERVER["SERVER_NAME"];
 
 /* That's all, stop editing! Happy blogging. */
 

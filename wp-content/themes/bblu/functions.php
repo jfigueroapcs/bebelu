@@ -24,6 +24,17 @@ include('library/pk_get_the_category.php');
 
 function theme_custom_types() {
     
+    add_custom_post_type(array(
+        'type' => 'nosotros',
+        'plural' => 'Nosotro'
+    ));
+    add_custom_taxonomy(array(
+        'name' => 'categoria-nosotros',
+        'singular' => 'nosotro',
+        'genero' => 'f',
+        'post_type' => 'nosotros',
+        'hierarchical' => true
+    ));
 }
 
 

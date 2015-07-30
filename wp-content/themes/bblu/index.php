@@ -147,7 +147,7 @@
                 <div class="col-lg-6 col-md-6 col-xs-12" style="overflow: hidden;text-align: center;">
                     <img src="<?php bloginfo('template_url'); ?>/images/catna.jpg"/>
                 </div>
-                <?php query_posts(array("post_type" => "product", "product_cat" => "nina,nina-chicos", "posts_per_page" => 6)); ?>
+                <?php query_posts(array("post_type" => "product", "product_cat" => "nina,nina-chicos", "posts_per_page" => 2)); ?>
             <?php while (have_posts()) { ?>
             <?php the_post(); ?>
                 <div class="col-lg-3 col-md-3 col-xs-6">
@@ -183,7 +183,7 @@
             <!---->
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <h3 class="fna">Niño</h3>
-                <?php query_posts(array("post_type" => "product", "product_cat" => "nino,nino-chicos", "posts_per_page" => 6)); ?>
+                <?php query_posts(array("post_type" => "product", "product_cat" => "nino,nino-chicos", "posts_per_page" => 2)); ?>
             <?php while (have_posts()) { ?>
             <?php the_post(); ?>
                 <div class="col-lg-3 col-md-3 col-xs-6">

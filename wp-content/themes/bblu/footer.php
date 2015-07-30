@@ -1,6 +1,53 @@
 </section>
 <footer>
-    <p>Copyrigth © 2015  www.bbluu.com/ . Todos los derechos reservados. <br> Desarrollado por <a href="<?php echo "http://proyectokamila.com/"; ?>">Proyecto Kamila</a></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <a class="dropdown-toggle content-logo" data-toggle="dropdown" href="<?php echo home_url(""); ?>" role="button" aria-expanded="false">
+                   <img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="" class="logo"> 
+                </a>
+            </div>
+            <div class="col-lg-8">
+                <ul class="nav nav-pills menu">
+                                    <li role="presentation" class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo home_url(""); ?>" role="button" aria-expanded="false">
+                                            Inicio
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo home_url("contacto"); ?>" role="button" aria-expanded="false">
+                                            Contacto 
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo home_url("nosotros"); ?>" role="button" aria-expanded="false">
+                                            Nosotros 
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo home_url("tienda"); ?>" role="button" aria-expanded="false">
+                                            Tienda
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo home_url("blog"); ?>" role="button" aria-expanded="false">
+                                            Blog 
+                                        </a>
+                                    </li>
+                </ul>
+                <div class="clearfix"></div>
+                <p>Copyrigth © 2015  www.bbluu.com/ . Todos los derechos reservados. <br> Desarrollado por <a href="<?php echo "http://proyectokamila.com/"; ?>">Proyecto Kamila</a></p>
+            </div>
+            <div class="col-lg-2">
+                <ul class="nav navbar-nav">
+                    <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/g+.png"></img></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/tw.png"></img></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/fc.png"></img></a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    
     <?php //wp_footer(); ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="<?php bloginfo("template_url"); ?>/scripts/anythingslider/js/jquery.min.js"><\/script>')</script>

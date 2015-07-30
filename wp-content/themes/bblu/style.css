@@ -228,3 +228,34 @@ footer {
     min-height: 140px;
     background: #b7d282;
 }
+footer>.container>.row>.col-lg-2>a>.logo {
+    height: 140px;
+    padding-top: 10px;
+}
+footer>.container>.row>.col-lg-8>.nav-pills>li>a {
+    margin: 20px 0;
+    border-right: 1px solid #0084A6;
+    padding: 15px 15px !important;
+    font-weight: 400;
+    font-size: 18px;
+}
+footer>.container>.row>.col-lg-8>.nav-pills>li:last-child>a{
+    border:none;
+}
+footer>.container>.row>.col-lg-8>.nav-pills{
+    text-align:center;
+}
+footer>.container>.row>.col-lg-8>.nav-pills>li{
+    float:none;
+    display:inline-block;
+}
+footer>.container>.row>.col-lg-8>.nav-pills>li>a:hover, footer>.container>.row>.col-lg-2>ul.nav.navbar-nav>li>a:hover {
+    background: transparent !important;
+}
+footer>.container>.row>.col-lg-8>p {
+    text-align: center;
+}
+
+footer>.container>.row>.col-lg-2>ul.nav.navbar-nav>li>a {
+    padding: 30px 10px!important;
+}
